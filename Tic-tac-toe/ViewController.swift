@@ -24,13 +24,15 @@ class ViewController: UIViewController {
         [0,4,8]
     ]
     
+    var gameActive = true
+    
     
 
     @IBOutlet weak var btnMsg: UILabel!
     @IBOutlet weak var button: UIButton!
     
     @IBAction func buttonPressed(sender: AnyObject) {
-        if (boardState[sender.tag] == 0) {
+        if (boardState[sender.tag] == 0 && gameActive == true) {
             boardState[sender.tag] = activePlayer
             if activePlayer == 1 {
                 sender.setImage(UIImage(named: "nought.png"), forState: .Normal)
@@ -49,6 +51,8 @@ class ViewController: UIViewController {
     func validateWinningCombination( ) {
         for combination in winningCombination {
             if(boardState[combination[0]] != 0 && boardState[combination[0]] == boardState[combination[1]] && boardState[combination[1]] == boardState[combination[2]]) {
+                
+                gameActive = false
                 
                 if boardState[combination[0]] == 1 {
                     btnMsg.text = "NOUGHTS, WON!"
