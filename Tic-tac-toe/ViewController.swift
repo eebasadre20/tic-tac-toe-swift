@@ -30,6 +30,26 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var btnMsg: UILabel!
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var playAgainbtn: UIButton!
+    
+    @IBAction func playAgain(sender: AnyObject) {
+        boardState = [0,0,0,0,0,0,0,0,0]
+        activePlayer = 1
+        gameActive = true
+        
+        btnMsg.hidden = false
+        btnMsg.center = CGPointMake(btnMsg.center.x - 500, btnMsg.center.y)
+        
+        playAgainbtn.hidden = false
+        playAgainbtn.center = CGPointMake(playAgainbtn.center.x - 500, playAgainbtn.center.y)
+
+        var buttonClear : UIButton
+        
+        for var i = 0; i < 9; i++ {
+            buttonClear = view.viewWithTag(i) as! UIButton
+            buttonClear.setImage(nil, forState: .Normal)
+        }
+    }
     
     @IBAction func buttonPressed(sender: AnyObject) {
         if (boardState[sender.tag] == 0 && gameActive == true) {
@@ -63,7 +83,10 @@ class ViewController: UIViewController {
                 btnMsg.hidden = false
                 UIView.animateWithDuration(0.5, animations: { () -> Void in
                     self.btnMsg.center = CGPointMake(self.btnMsg.center.x + 500, self.btnMsg.center.y )
+                    self.playAgainbtn.center = CGPointMake(self.playAgainbtn.center.x + 500, self.playAgainbtn.center.y )
                 })
+                
+                playAgainbtn.hidden = false
             }
         }
     }
@@ -73,6 +96,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         btnMsg.hidden = true
         btnMsg.center = CGPointMake(btnMsg.center.x - 500, btnMsg.center.y)
+        
+        playAgainbtn.hidden = true
+        playAgainbtn.center = CGPointMake(playAgainbtn.center.x - 500, playAgainbtn.center.y)
+
     }
 
     override func didReceiveMemoryWarning() {
