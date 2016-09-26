@@ -89,6 +89,25 @@ class ViewController: UIViewController {
                 playAgainbtn.hidden = false
             }
         }
+        
+        gameActive = false
+        
+        for buttonState in boardState {
+            if buttonState == 0 {
+                gameActive = true
+            }
+        }
+        
+        if gameActive == false {
+            btnMsg.text = "OOPS! IT'S A DRAW!"
+            btnMsg.hidden = false
+            UIView.animateWithDuration(0.5, animations: { () -> Void in
+                self.btnMsg.center = CGPointMake(self.btnMsg.center.x + 500, self.btnMsg.center.y )
+                self.playAgainbtn.center = CGPointMake(self.playAgainbtn.center.x + 500, self.playAgainbtn.center.y )
+            })
+            
+            playAgainbtn.hidden = false
+        }
     }
     
     override func viewDidLoad() {
