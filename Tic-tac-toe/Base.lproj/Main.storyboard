@@ -34,19 +34,7 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zIn-3a-RAY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q67-Ta-NuK">
-                                <rect key="frame" x="137" y="148" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="6s3-L2-esN"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Tse-oI-gcg"/>
-                                    <constraint firstAttribute="height" constant="100" id="f2J-Oz-oUa"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="zaN-hf-Rrn"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="al9-Nz-l7E"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5T-Vh-iVb">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5T-Vh-iVb">
                                 <rect key="frame" x="267" y="148" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="fYA-Sn-9ek"/>
@@ -54,11 +42,12 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="uNw-n3-fGY"/>
                                     <constraint firstAttribute="height" constant="100" id="zAj-1f-oVj"/>
                                 </constraints>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="2" maxY="0.0"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yck-B5-qKc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFa-5J-GrY">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFa-5J-GrY">
                                 <rect key="frame" x="13" y="275" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="9jM-Wz-NmA"/>
@@ -66,11 +55,12 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="RSs-rp-22V"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="WLe-Ha-Hf1"/>
                                 </constraints>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SOp-3Y-hC6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yN-3K-xHW">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yN-3K-xHW">
                                 <rect key="frame" x="137" y="275" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="2KU-Ju-pq8"/>
@@ -80,11 +70,12 @@
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="YlQ-Te-89f"/>
                                     <constraint firstAttribute="width" constant="100" id="d0i-jM-fqr"/>
                                 </constraints>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="4" maxY="0.0"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xH5-oU-aGy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLH-Ai-osf">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLH-Ai-osf">
                                 <rect key="frame" x="267" y="275" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="3h4-cN-egZ"/>
@@ -94,11 +85,12 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="rIS-mK-8se"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="vAQ-xU-S1L"/>
                                 </constraints>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VQl-fW-uwz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOn-7U-WfV">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOn-7U-WfV">
                                 <rect key="frame" x="10" y="402" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="0bA-UP-oic"/>
@@ -108,11 +100,12 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Qbm-cb-p9L"/>
                                     <constraint firstAttribute="width" constant="100" id="lee-Al-6Zv"/>
                                 </constraints>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="0.0"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NPY-l8-VL0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqA-7d-WMc">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqA-7d-WMc">
                                 <rect key="frame" x="134" y="402" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="RZN-IC-t8r"/>
@@ -124,12 +117,13 @@
                                     <constraint firstAttribute="height" constant="100" id="yXA-fT-7Mq"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="zIb-pc-2VF"/>
                                 </constraints>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="7" maxX="0.0" maxY="0.0"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfx-zz-Tnf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJl-Y3-AYO">
-                                <rect key="frame" x="264" y="402" width="100" height="100"/>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJl-Y3-AYO">
+                                <rect key="frame" x="267" y="402" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="HbD-Lc-B00"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="WAi-3k-shx"/>
@@ -140,8 +134,22 @@
                                     <constraint firstAttribute="width" constant="100" id="ter-qq-MKb"/>
                                     <constraint firstAttribute="height" constant="100" id="ykk-9b-0Um"/>
                                 </constraints>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="8" maxX="0.0" maxY="0.0"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9wc-EG-mL6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q67-Ta-NuK">
+                                <rect key="frame" x="137" y="148" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6s3-L2-esN"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Tse-oI-gcg"/>
+                                    <constraint firstAttribute="height" constant="100" id="f2J-Oz-oUa"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="zaN-hf-Rrn"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="1" maxY="0.0"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="al9-Nz-l7E"/>
                                 </connections>
                             </button>
                         </subviews>
